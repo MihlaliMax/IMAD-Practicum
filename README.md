@@ -50,3 +50,8 @@ end
       
       https://github.com/VCCT-IMAD5112-2024-G1/Mihlali-Sizani_ST10438319_IMAD-Practicum.git
 *************************************************************************************************************************************************
+
+
+
+![image](https://github.com/VCCT-IMAD5112-2024-G1/Mihlali-Sizani_ST10438319_IMAD-Practicum/assets/166116932/5d54712e-3ff8-4b4f-82d6-74a739c42a38)
+
