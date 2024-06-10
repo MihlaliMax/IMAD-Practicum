@@ -22,7 +22,7 @@ his screen will display detailed information for each day's temperature​
 A full forecast ​
 of the week is displayed
 ​
-
+****************************************************************************************************************************************************************
 
 start
    declaration
@@ -44,6 +44,9 @@ start
         max " + maxTemps[index] + "°C, " + conditions[index] + "\n"
     endfor
 end
+**********************************************************************************************************************************************
 
+      github repository link
       
-
+      https://github.com/VCCT-IMAD5112-2024-G1/Mihlali-Sizani_ST10438319_IMAD-Practicum.git
+*************************************************************************************************************************************************
