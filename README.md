@@ -55,3 +55,11 @@ end
 
 ![image](https://github.com/VCCT-IMAD5112-2024-G1/Mihlali-Sizani_ST10438319_IMAD-Practicum/assets/166116932/5d54712e-3ff8-4b4f-82d6-74a739c42a38)
 
+
+
+
+![image](https://github.com/VCCT-IMAD5112-2024-G1/Mihlali-Sizani_ST10438319_IMAD-Practicum/assets/166116932/10c3fa34-02bf-436a-8958-96fdc6d712a7)
+
+
+
+![image](https://github.com/VCCT-IMAD5112-2024-G1/Mihlali-Sizani_ST10438319_IMAD-Practicum/assets/166116932/1cc84959-289b-4fff-a6e0-c25b48e6f167)
