@@ -24,71 +24,25 @@ of the week is displayed
 ​
 
 start
-declaration
-    // Parallel arrays for weather data
-    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    minTemps = [14, 13, 11, 12, 10, 10, 9]
-    maxTemps = [25, 22, 18, 11, 15, 16, 13]
+   declaration
+      num days
+      num minTemps
+      num maxTemps
+      num conditions
 
-    function onCreate():
-        // Set content view
-        setContentView(R.layout.activity_main2)
+      //loop to calculate the average temperature
 
-        // Find views
-        dailyButton = findButtonById(R.id.dailyButton)
-        averageTemp = findTextViewById(R.id.averageTemp)
+        for each index i in minTemps
+            totalTemp = totalTemp + (minTemps[i] + maxTemps[i]) / 2
+        end for
+     
+      // parallel arrays for deatailed weather, loop displays the weather data
 
-        // Calculate and display average temperature
-        avgTemp = calculateAverageTemperature()
-        averageTemp.text = "Average Temp: $avgTemp°C"
+    for index = 0 To Size(days) - 1
+        builder = builder + days[index] + ": min " + minTemps[index] + "°C, 
+        max " + maxTemps[index] + "°C, " + conditions[index] + "\n"
+    endfor
+end
 
-        // Set button click listener
-        dailyButton.setOnClickListener:
-            intent = createIntent(MainActivity3)
-            startActivity(intent)
+      
 
-    function calculateAverageTemperature():
-        totalTemp = 0
-        for i in range(minTemps.size):
-            totalTemp += (minTemps[i] + maxTemps[i]) / 2
-        return totalTemp / days.size
-
-
-// Main3Activity.kt
-class Main3Activity:
-    // Parallel arrays for detailed weather data
-    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    minTemps = [14, 13, 11, 12, 10, 10, 9]
-    maxTemps = [25, 22, 18, 11, 15, 16, 13]
-    conditions = ["sunny", "sunny", "Light rain", "cloudy", "Light rain", "raining", "cold"]
-
-    function onCreate():
-        // Set content view
-        setContentView(R.layout.activity_main3)
-
-        // Find view
-        dailyWeatherDetails = findTextViewById(R.id.dailyWeatherDetails)
-
-        // Display detailed weather information
-        dailyWeatherDetails.text = getDetailedWeatherInfo()
-
-    function getDetailedWeatherInfo():
-        builder = StringBuilder()
-        for i in range(days.size):
-            builder.append("${days[i]}: min ${minTemps[i]}°C, max ${maxTemps[i]}°C, ${conditions[i]}\n")
-        return builder.toString()
-
-
-// AndroidManifest.xml
-<manifest>
-    <application>
-        <activity android:name=".MainActivity3"></activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-</manifest>
-stop
